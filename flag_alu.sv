@@ -11,7 +11,7 @@ module FlagALU #(parameter N = 32)
 
     assign v = ~m[1] & (a[N-1] ^ r[N-1]) & ~(a ^ b ^ m[0]);
 
-    assign c = ~m[0] & cpa_cout;
+    assign c = ~m[1] & cpa_cout;
 
     assign n = r[N-1];
 
